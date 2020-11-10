@@ -1,17 +1,22 @@
 import React from "react";
-import ListItem from "./ListItem";
-import "./BookList";
+import "./BookList.css";
 
-class BookList extends React.Component {
-  render() {
-    return (
-      <div className="bookList">
-        <ul>
-          <ListItem />
-        </ul>
-      </div>
-    );
-  }
+function BookList(props) {
+  const { results } = props;
+  return (
+    <div className="bookList">
+      <ul>
+        {results.map((result, index) => (
+          <li className="listItem">
+            <div className="bookInfo">
+              <h2>{result.volumeInfo.title}</h2>
+              <p>{result.volumeInfo.authors}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default BookList;

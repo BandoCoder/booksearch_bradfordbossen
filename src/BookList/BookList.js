@@ -7,7 +7,7 @@ function BookList(props) {
     <div className="bookList">
       <ul>
         {results.map((result, index) => (
-          <li className="listItem">
+          <li key={index} className="listItem">
             <div className="bookInfo">
               <h2>{result.volumeInfo.title}</h2>
               <p>{result.volumeInfo.authors}</p>

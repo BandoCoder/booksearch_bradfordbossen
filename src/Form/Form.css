@@ -1,0 +1,21 @@
+.bookSearch {
+  padding: 10px;
+  background-color: rgb(202, 202, 202);
+  font-weight: bolder;
+}
+
+.bookSearch button {
+  margin-left: 10px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(163, 163, 163);
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.filters #printType {
+  margin-right: 15px;
+}
